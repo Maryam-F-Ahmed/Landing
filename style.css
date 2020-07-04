@@ -1,0 +1,180 @@
+/* style.css */
+body {
+  font-family: Source Code Pro;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 {
+  font-family: Source Code Pro;
+}
+
+h2 {
+font-family: Source Code Pro;
+font-weight: bold;
+color: #000000;
+text-align: center;
+}
+
+h3 {
+font-family: Source Code Pro;
+color: #000000;
+text-align: center;
+}
+
+p {
+	color: #ffffff;
+}
+
+.container {
+width: 800px;
+margin: auto;
+}
+
+.second-container {
+width: 800px;
+margin: auto;
+}
+
+.banner {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/Climate change.png');
+	background-size: cover;
+	background-position: center;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.banner h1 {
+	color: #ffffff;
+	font-size:45px;
+	margin: 0;
+}
+
+.banner p {
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.button-grey {
+	background-color: #636363;
+	color: #ffffff;
+	padding: 8px 24px;
+	border-radius: 4px;
+	display: inline-block;
+	text-decoration: none;
+	transition: .2s;
+}
+
+
+.button-grey:hover {
+	background-color: #f4f4f4;
+	color: #F70000;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+	justify-content: center;
+}
+
+.second-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+	justify-content: center;
+}
+
+.card-white {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 280px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+
+.card-white img {
+  width: 280px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.footer {
+  background: #000000;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: #ffffff;
+}
+
+
+a {
+  color: #BA0707;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #F70000;
+}/* Write some CSS below */
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .second-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media (min-width: 500px) {
+  .second-container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .second-container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .second-container {
+    width: 800px;
+  }
+}
